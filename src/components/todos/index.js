@@ -30,7 +30,6 @@ const Todos = ({ items, status }) => {
               alignItems: "center"
             }}
           >
-            {console.log("page options", pageOptions)}
             <Link href={`/${pageOptions.backLink}`}>Back</Link>
             <Title level={3}>Status : {status}</Title>
             <Link href={`/${pageOptions.link}`}>{pageOptions.nextStatus}</Link>
