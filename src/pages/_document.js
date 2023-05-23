@@ -1,4 +1,6 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { store } from "@/context/store/store";
+import { Html, Head, Main, NextScript } from "next/document";
+import { Provider } from "react-redux";
 
 export default function Document() {
   return (
@@ -9,5 +11,5 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
