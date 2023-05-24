@@ -19,7 +19,7 @@ npm install
 3. Go directory
 
 ```bash
-cd basic-todo
+cd todo-app
 ```
 
 4. Run the app
