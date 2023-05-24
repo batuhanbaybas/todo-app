@@ -29,7 +29,7 @@ const TodoActionModal = ({ title, data, ...other }) => {
     >
       <Form onFinish={onFinish} form={form} layout="vertical">
         <Row gutter={24}>
-          <Col span={16}>
+          <Col xs={24} sm={24} md={16}>
             <Form.Item
               label="Todo"
               name="todo"
@@ -38,7 +38,7 @@ const TodoActionModal = ({ title, data, ...other }) => {
               <Input autoComplete={false} placeholder="Enter Todo" />
             </Form.Item>
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={24} md={8}>
             <Form.Item
               label="Status"
               initialValue={todoStatus[0].key}

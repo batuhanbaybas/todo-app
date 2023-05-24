@@ -1,4 +1,4 @@
-import Todos from "@/components/todos";
+import TodoList from "@/components/todo-list";
 import { completedTodo } from "@/context/feature/todo-slice";
 import { pageHeader } from "@/helpers/page-headers";
 import Head from "next/head";
@@ -13,7 +13,7 @@ const Completed = () => {
         <title>{pageHeader.Done.title}</title>
         <meta name="description" content={pageHeader.Done.description} />
       </Head>
-      <Todos status="Completed" items={completed} />
+      <TodoList status="Completed" items={completed} />
     </>
   );
 };

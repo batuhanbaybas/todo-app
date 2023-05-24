@@ -1,4 +1,4 @@
-import Todos from "@/components/todos";
+import TodoList from "@/components/todo-list";
 import { todoOnProgress } from "@/context/feature/todo-slice";
 import { pageHeader } from "@/helpers/page-headers";
 import Head from "next/head";
@@ -13,7 +13,7 @@ const OnProgress = () => {
         <title>{pageHeader.OnProgress.title}</title>
         <meta name="description" content={pageHeader.OnProgress.description} />
       </Head>
-      <Todos status="On Progress" items={onProgress} />;
+      <TodoList status="On Progress" items={onProgress} />;
     </>
   );
 };

@@ -20,7 +20,7 @@ const NavBar = () => {
         </Button>
       </nav>
       <TodoActionModal
-        visible={visible}
+        open={visible}
         onCancel={() => setVisible(false)}
         title={"Add Todo"}
       />

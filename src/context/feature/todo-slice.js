@@ -1,13 +1,7 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
-  todos: [
-    {
-      id: null,
-      todo: "",
-      status: null
-    }
-  ]
+  todos: []
 };
 
 const todoSlice = createSlice({
@@ -47,7 +41,8 @@ export const { addTodo, removeTodo, updateTodo } = todoSlice.actions;
 export const todoOnProgress = (state) =>
   state.todo.todos.filter((todo) => todo.status === "onProgress");
 export const completedTodo = (state) =>
-  state.todo.todos.filter((todo) => todo.status === "done");
+  state.todo.todos.filter((todo) => todo.status === "completed");
 export const todo = (state) =>
   state.todo.todos.filter((todo) => todo.status === "todo");
+export const allTodos = (state) => state.todo.todos;
 export default todoSlice.reducer;

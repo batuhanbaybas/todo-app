@@ -8,7 +8,7 @@ export const todoStatus = [
     value: "On Progress"
   },
   {
-    key: "done",
-    value: "Done"
+    key: "completed",
+    value: "Completed"
   }
 ];

@@ -13,22 +13,29 @@ const useHandlePage = ({ status }) => {
         return setPageOptions({
           link: "/on-progress",
           nextStatus: "On Progress",
-          backStatus: "Todo",
+          backStatus: "All",
           backLink: "/"
         });
       case "On Progress":
         return setPageOptions({
           link: "/completed",
           nextStatus: "Completed",
-          backStatus: "On Progress",
-          backLink: "/"
+          backStatus: "Todo",
+          backLink: "/todo"
         });
       case "Completed":
         return setPageOptions({
-          link: "/",
+          link: "",
           nextStatus: "",
           backStatus: "On Progress",
           backLink: "/on-progress"
+        });
+      case "All":
+        return setPageOptions({
+          link: "/todo",
+          nextStatus: "Todo",
+          backStatus: "",
+          backLink: ""
         });
     }
   };
