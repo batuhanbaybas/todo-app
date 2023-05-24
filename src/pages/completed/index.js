@@ -10,7 +10,9 @@ const Completed = () => {
   return (
     <>
       <Head>
-        <title>{pageHeader.Done.title}</title>
+        <title>
+          {pageHeader.Done.title}-{pageHeader.Done.description}
+        </title>
         <meta name="description" content={pageHeader.Done.description} />
       </Head>
       <TodoList status="Completed" items={completed} />

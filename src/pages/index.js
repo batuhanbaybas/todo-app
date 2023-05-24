@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{pageHeader.All.title}</title>
+        <title>
+          {pageHeader.All.title}-{pageHeader.All.description}
+        </title>
         <meta name="description" content={pageHeader.All.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

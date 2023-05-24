@@ -10,7 +10,9 @@ const OnProgress = () => {
   return (
     <>
       <Head>
-        <title>{pageHeader.OnProgress.title}</title>
+        <title>
+          {pageHeader.OnProgress.title}-{pageHeader.OnProgress.description}
+        </title>
         <meta name="description" content={pageHeader.OnProgress.description} />
       </Head>
       <TodoList status="On Progress" items={onProgress} />;
