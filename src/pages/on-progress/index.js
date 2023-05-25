@@ -15,7 +15,7 @@ const OnProgress = () => {
         </title>
         <meta name="description" content={pageHeader.OnProgress.description} />
       </Head>
-      <TodoList status="On Progress" items={onProgress} />;
+      <TodoList status="On Progress" items={onProgress} />
     </>
   );
 };
