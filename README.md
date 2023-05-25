@@ -2,6 +2,8 @@
 
 This is simple todo app you can categorize your todo based on status and manage them on easily.
 
+[Live Demo](https://todo-6zwu60nk5-batuhanbaybas.vercel.app/)
+
 ## Installation and Setup Instructions
 
 1. Clone the repository
