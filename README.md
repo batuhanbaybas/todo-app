@@ -2,7 +2,6 @@
 
 This is simple todo app you can categorize your todo based on status and manage them on easily.
 
-[Live Demo](https://todo-app-phi-opal.vercel.app/)
 
 ## Installation and Setup Instructions
 
